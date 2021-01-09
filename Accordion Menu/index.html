@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="menu">
+            <div class="tabs">
+                <h1 class="heading fir">FIRST</h1>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, consectetur, itaque hic id minus officiis quasi dolores architecto laudantium, blanditiis sapiente sequi! Vitae aspernatur minima delectus architecto tempore corrupti quaerat!</p>
+            </div>
+            <div class="tabs">
+                <h1 class="heading sec">SECOND</h1>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, consectetur, itaque hic id minus officiis quasi dolores architecto laudantium, blanditiis sapiente sequi!</p>
+            </div>
+            <div class="tabs">
+                <h1 class="heading th">THIRD</h1>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, consectetur, itaque hic id minus officiis quasi dolores architecto laudantium, blanditiis sapiente sequi! Vitae aspernatur minima delectus architecto tempore corrupti quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo impedit dignissimos repudiandae. Adipisci, pariatur fugiat molestiae ducimus, voluptatum impedit ut nobis alias nesciunt labore a, tempore officiis quam. Numquam, quasi.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const tab = document.getElementsByClassName("tabs");
+    for(i = 0;i < tab.length;i++){
+        tab[i].addEventListener("click",function(){
+        this.classList.toggle("active");    
+        });
+    }
+    </script>
+</body>
+</html>
