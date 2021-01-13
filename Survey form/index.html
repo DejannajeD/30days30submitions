@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <header>
+      <section class="title-text">
+        <h1 id="title">Survey</h1>
+        <p id="description" class="title-text"><em style="font-size: 90%;">Answer the questions below</em></p>
+      </section>
+    </header>
+    
+    <main>
+      <form id="survey-form">
+        <section id="survey-fields">
+          <!-- identification fields -->
+          <label for="name" id="name-label">* Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+          <label for="Email" id="email-label">* Email:</label>
+          <input id="email" type="email" placeholder="Enter your Email adress" required>
+          <label for="number" id="number-label">* Age:</label>
+          <input id="number" type="number" placeholder="Enter your age" min=1 max=125 required>
+        
+          <!-- Which option best describes your current role -->
+          <label for="dropdown">What describe you the most?</label>
+          <select id="dropdown" form="survey-form">
+            <option value="" disabled selected>Choose</option>
+            <option value="nisam-fizicki-aktivan">Student</option>
+            <option value="Slabo-fizicki-aktivan">Full-time job</option>
+            <option value="Aktivno-treniram">Part-time job</option>
+            <option value="Profesionalno-se-bavim-sportom">Trenee</option>
+            <option value="Drugo">Other</option>
+          </select>
+        
+          <!-- How likely is that you would recommend freeCodeCamp to a friend -->
+          <label for="recommendation">* Did you try our products?</label>
+          <fieldset id="recommendation">
+            <label for="r_definitely"><input type="radio" name="recommend" id="r_definitely" value="definitely" required>Yes</label>
+            <label for="r_maybe"><input type="radio" name="recommend" id="r_maybe" value="maybe" required>No</label>
+            <label for="r_not_sure"><input type="radio" name="recommend" id="r_not_sure" value="notsure" required>Not sure</label>
+          </fieldset>
+          
+          <!-- What do you like most in FCC -->
+          <label for="likethemost">What of these product you know?</label>
+          <select id="likethemost">
+            <option value="" disabled selected>Choose</option>
+            <option value="challenges">Protein bar</option>
+            <option value="projects">Whey protein</option>
+            <option value="community">Fat burner</option>
+            <option value="open-source">Bcaa's</option>
+          <option value="trening">Life potion</option> 
+            <option value"obuka">N.O.</option>
+          </select>
+        
+          <!-- Things that should be improved in the future -->
+          <label for="improvements">Why you wont to use our products?</label>
+          <fieldset id="improvements">
+            <legend>(<em>Choose what you wont from product to do for you</em>)</legend>
+            <label for="c-fep"><input type="checkbox" name="improve-checks" id="c-fep" value="fep">Fat burning</label>
+            <label for="c-bep"><input type="checkbox" name="improve-checks" id="c-bep" value="bep">Add muscle mass</label>
+            <label for="c-datav"><input type="checkbox" name="improve-checks" id="c-datav" value="datav">Add weight</label>
+            <label for="c-chlgs"><input type="checkbox" name="improve-checks" id="c-chlgs" value="chlgs">Focus</label>
+            <label for="c-osc"><input type="checkbox" name="improve-checks" id="c-osc" value="osc">Be stronger</label>
+            <label for="c-ghr"><input type="checkbox" name="improve-checks" id="c-ghr" value="ghr">Testosterone boost</label>
+            <label for="c-vid"><input type="checkbox" name="improve-checks" id="c-vid" value="vid">Cardio duration</label>
+            <label for="c-meet"><input type="checkbox" name="improve-checks" id="c-meet" value="meet">Mental clarity</label>
+            <label for="c-wiki"><input type="checkbox" name="improve-checks" id="c-wiki" value="wiki">Better joints function</label>
+            <label for="c-forum"><input type="checkbox" name="improve-checks" id="c-forum" value="forum">
+  Better sleep</label>
+            <label for="c-addcours"><input type="checkbox" name="improve-checks" id="c-addcours" value="addcours">Other</label>
+          </fieldset>
+         
+          <!-- Any Comments or Suggestions -->
+          <label for="comments">Aditional questions and suggestions?</label>
+          <textarea style="height:50px;resize:vertical;" id="comments" placeholder="Type question"></textarea>
+        </section>
+  
+        <!-- submit -->
+        <button id="submit">Send</button>
+    </form>  
+                       
+          </main>
+  </body>
+</html>
